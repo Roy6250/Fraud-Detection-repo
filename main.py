@@ -129,7 +129,7 @@ genai.configure(api_key='AIzaSyCVSPwfCwvG7U-oMzWg8glv0oZt5-A1mjY')
 # model = genai.GenerativeModel('gemini-pro')
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-@app.post("/fraud-detection-image/")
+@app.post("/api/fraud-detection-image/")
 async def detect_fraud_endpoint(file: UploadFile = File(...)):
     global prompt
     try:
@@ -147,7 +147,7 @@ async def detect_fraud_endpoint(file: UploadFile = File(...)):
 
 
 
-@app.post("/fraud-detection-text/")
+@app.post("/api/fraud-detection-text/")
 async def detect_fraud_endpoint(quest:questions):
 
     global prompt
