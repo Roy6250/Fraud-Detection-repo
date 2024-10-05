@@ -1,0 +1,13 @@
+# Ignore SSL certificate files
+*.crt
+*.key
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+fraud
+env
+venv/
+.env
